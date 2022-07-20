@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Satisfy">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Open+Sans">
+    <link rel="stylesheet" href="node_modules/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Italian Restaurant Template</title>
+</head>
+
+<body>
+    <header id="header" class="jumbotron jumbotron-fluid d-flex fixed-top align-items-center">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <div class="logo me-auto col">
+                <h1 class="text-nowrap"><a href="index.html"><span>Italian</span> Restaurant</a></h1>
+            </div>
+        </div>
+        <a href="#book-a-table" class="book-a-table-btn" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or to make a reservation, call us at <br/><strong>1-404-310-4776</strong>">BOOK A TABLE</a>
+    </header>
+    <nav id="navbar" class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                data-target="#restaurantNavbar"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="restaurantNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item active"><a href="our_menu.html" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item"><a href="orderonline.html" class="nav-link">Order Online</a>
+                    </li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navbar-text ml-auto"><a class="book-a-table-btn" role="button" data-toggle="modal" data-target="#loginModal">LOGIN</a></span>
+        </div>
+    </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter your e-mail">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Enter your password">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Remember Me?</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn book-a-table-btn btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn book-a-table-btn btn-sm ml-1">Sign In</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item mr-2"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item mr-2 active"><a href="our_menu.html">Menu</a></li>
+                    <li class="breadcumb-item mr-2"><a href="contact.html">Contact</a></li>
+                    <li class="breadcrumb-item mr-2"><a href="orderonline.html">Order Online</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <section id="home">
+        <div class="home-container">
+            <div id="homeCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                <ol class="carousel-indicators" id="home-carousel-indicators"></ol>
+
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="carousel-item active" style="background-image: url(img/restaurant_interior.jpg);">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate__fadeInDown"><span>Italian</span> Restaurant</h2>
+                                <p class="animate__animated animate__fadeInUp">Great local ingredients, great
+                                    spirits
+                                    and great service! We can't wait to see you!</p>
+                                <div>
+                                    <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our
+                                        Menu</a>
+                                    <a href="#book-a-table"
+                                        class="btn-book animate__animated animate__fadeInUp scrollto">Book a
+                                        Table</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" style="background-image: url(img/pizza.jpg);">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate__fadeInDown">Culinary Excellence</h2>
+                                <p class="animate__animated animate__fadeInUp">To ensure the highest quality dining
+                                    experience, our chef updates the menu daily.</p>
+                                <div>
+                                    <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our
+                                        Menu</a>
+                                    <a href="#book-a-table"
+                                        class="btn-book animate__animated animate__fadeInUp scrollto">Book a
+                                        Table</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" style="background-image: url(img/spaghetti.jpg);">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate__fadeInDown">Food for the Soul</h2>
+                                <p class="animate__animated animate__fadeInUp">Come and join us for a night you
+                                    won't
+                                    soon forget!</p>
+                                <div>
+                                    <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our
+                                        Menu</a>
+                                    <a href="#book-a-table"
+                                        class="btn-book animate__animated animate__fadeInUp scrollto">Book a
+                                        Table</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon fa fa-chevron-left" aria-hidden="true"></span>
+                </a>
+
+                <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon fa fa-chevron-right" aria-hidden="true"></span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div id="menu" class="menu">
+            <h2 class="heading-block heading-block-center topmargin-sm col-sm-3 menu-group-heading">Appetizers</h2>
+            <div class="menu-group">
+                <div class="menu-item">
+                    <img class="menu-item-image" src="img/bruschetta.jpg" alt="Bruschetta">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Bruschetta</span>
+                            <span class="menu-item-price">$9.95</span>
+                        </h3>
+                        <p class="menu-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                            magnam ex, quam hic,
+                            consectetur repellat eligendi in nobis aliquid at quis, expedita itaque! Laudantium nemo rem
+                            dicta obcaecati magni voluptatibus?</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item-image" src="img/calamari.jpg" alt="Calamari">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Calamari</span>
+                            <span class="menu-item-price">$11.95</span>
+                        </h3>
+                        <p class="menu-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                            vero voluptate est rerum. Velit
+                            enim placeat mollitia, at aliquam et sequi vero eligendi quos repellendus, similique dolore.
+                            Dolorum, minima voluptatem.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item-image" src="img/mozzarella_sticks.jpg" alt="Mozzarella Sticks">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Mozzarella Sticks</span>
+                            <span class="menu-item-price">$9.95</span>
+                        </h3>
+                        <p class="menu-item-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+                            natus quaerat, iusto dolores
+                            maxime ut veritatis libero perferendis ducimus. Quos ratione unde veniam sit, quisquam quia
+                            ut. Officiis, quis tempora?</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item-image" src="img/caprese.jpg" alt="Caprese">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Caprese Salad</span>
+                            <span class="menu-item-price">$10.95</span>
+                        </h3>
+                        <p class="menu-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Recusandae accusamus aspernatur
+                            veritatis possimus voluptatem esse deleniti assumenda fugit ut vel. Natus, accusamus
+                            possimus maiores soluta repellendus eligendi magni ducimus incidunt.</p>
+                    </div>
+                </div>
+                <h2 class="heading-block heading-block-center topmargin-sm col-sm-3 menu-group-heading">Entrees</h2>
+                <div class="menu-group">
+                    <div class="menu-item">
+                        <img class="menu-item-image" src="img/Classic-Lasagna.jpg" alt="Lasagna">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Classic Lasagna</span>
+                                <span class="menu-item-price">$15.95</span>
+                            </h3>
+                            <p class="menu-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Porro, facere necessitatibus
+                                nemo eaque harum cum enim libero animi quidem quisquam modi deleniti distinctio pariatur
+                                dolorem quis esse, voluptatum impedit laudantium!</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img class="menu-item-image" src="img/pizza.jpg" alt="Margherita Pizaa">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Margherita Pizza</span>
+                                <span class="menu-item-price">$16.95</span>
+                            </h3>
+                            <p class="menu-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Porro, facere necessitatibus
+                                nemo eaque harum cum enim libero animi quidem quisquam modi deleniti distinctio pariatur
+                                dolorem quis esse, voluptatum impedit laudantium!</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img class="menu-item-image" src="img/spaghetti.jpg" alt="Spaghetti and Meatsauce">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Spaghetti & Meatsauce</span>
+                                <span class="menu-item-price">$16.95</span>
+                            </h3>
+                            <p class="menu-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Porro, facere necessitatibus
+                                nemo eaque harum cum enim libero animi quidem quisquam modi deleniti distinctio pariatur
+                                dolorem quis esse, voluptatum impedit laudantium!</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img class="menu-item-image" src="img/spag_and_meatballs.jpg" alt="Spaghetti and Meatballs">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Spaghetti & Meatballs</span>
+                                <span class="menu-item-price">$16.95</span>
+                            </h3>
+                            <p class="menu-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Porro, facere necessitatibus
+                                nemo eaque harum cum enim libero animi quidem quisquam modi deleniti distinctio pariatur
+                                dolorem quis esse, voluptatum impedit laudantium!</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img class="menu-item-image" src="img/spag_and_sauce.jpeg" alt="Spaghetti and Sauce">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Spaghetti & Sauce</span>
+                                <span class="menu-item-price">$16.95</span>
+                            </h3>
+                            <p class="menu-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Porro, facere necessitatibus
+                                nemo eaque harum cum enim libero animi quidem quisquam modi deleniti distinctio pariatur
+                                dolorem quis esse, voluptatum impedit laudantium!</p>
+                        </div>
+                    </div>
+                    <div class="menu-item"></div>
+                </div>
+                <h2 class="heading-block heading-block-center topmargin-sm col-sm-3 menu-group-heading">Dessert</h2>
+                <div class="menu-group">
+                    <div class="menu-item">
+                        <img class="menu-item-image" src="img/cannoli.jpg" alt="Cannoli">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Cannoli</span>
+                                <span class="menu-item-price">$7.95</span>
+                            </h3>
+                            <p class="menu-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Iste vero voluptate est rerum.
+                                Velit enim placeat mollitia, at aliquam et sequi vero eligendi quos repellendus,
+                                similique dolore. Dolorum, minima voluptatem.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img class="menu-item-image" src="img/tiramisu.jpg" alt="tiramisu">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Tiramisu</span>
+                                <span class="menu-item-price">$7.95</span>
+                            </h3>
+                            <p class="menu-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Iste vero voluptate est rerum.
+                                Velit enim placeat mollitia, at aliquam et sequi vero eligendi quos repellendus,
+                                similique dolore. Dolorum, minima voluptatem.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img class="menu-item-image" src="img/stracciatelli.jpg" alt="Mint Stracciatelli">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Mint Straciatella Gelato</span>
+                                <span class="menu-item-price">$8.95</span>
+                            </h3>
+                            <p class="menu-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Iste vero voluptate est rerum.
+                                Velit enim placeat mollitia, at aliquam et sequi vero eligendi quos repellendus,
+                                similique dolore. Dolorum, minima voluptatem.</p>
+                        </div>
+                        <h4>Not dining in with us tonight?</h4>
+                        <p>Order something online instead!</p>
+                        <a href="orderonline.html" type="btn" class="btn book-a-table-btn">ORDER ONLINE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div id="card" class="card">
+            <h3 id="card-header" class="card-header">Book a Table</h3>
+            <form id="book-a-table">
+                <div class="card-body">
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-6">Name</label>
+                        <div class="col-sm-6">
+                            <input class="form-control" type="text" placeholder="Your name" name="name" id="name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-6">Email</label>
+                        <div class="col-sm-6">
+                            <input class="form-control" type="text" placeholder="Your email" name="email" id="email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-6">Phone #</label>
+                        <div class="col-sm-6">
+                            <input class="form-control" type="text" placeholder="Your phone #" name="phone#"
+                                id="phone#">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-6">Number of Guests</label>
+                        <div class=" col-sm-6">
+                            <select class="form-control" name="numGuests" id="numGuests">
+                                <option> Select... </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class=" form-group row">
+                        <label class="col-sm-6 col-form-label" for="date">Date</label>
+                        <div class="col-sm-6">
+                            <input class="form-control" type="date" name="date" id="date" placeholder="mm/dd/yyyy">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-6 col-form-label" for="time">Time</label>
+                        <div class="col-sm-6">
+                            <input type="time" class="col-form-control" name="time" id="time"></input>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-6">Comments/Requests</label>
+                        <div class="col-sm-6">
+                            <textarea row="6" class="form-control" type="text" placeholder="" name="comments"
+                                id="comments"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <a href="#" class="book-a-table-btn">SUBMIT</a>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container-fluid">
+            <h3>Italian Restaurant</h3>
+            <div class="social-links">
+                <a href="twitter.com" type="btn" class="btn btn-sm btn-twitter"><i class="fa fa-twitter"></i></a>
+                <a href="facebook.com" type="btn" class="btn btn-sm btn-facebook"><i class="fa fa-facebook"></i></a>
+                <a href="instagram.com" type="btn" class="btn btn-sm btn-instagram"><i class="fa fa-instagram"></i></a>
+                <a href="linkedin.com" type="btn" class="btn btn-sm btn-linkedin"><i class="fa fa-linkedin"></i></a>
+                <a href="index.html" class="btn btn-sm btn-arrow-up" role="button" aria-pressed="true"
+                    id="return-to-top"><i class="fa fa-arrow-up"></i></a>
+            </div>
+        </div>
+
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+
+</html>
