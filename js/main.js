@@ -12,7 +12,9 @@
         return document.querySelector(el)
       }
     }
-  
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
     /**
      * Easy event listener function
      */
