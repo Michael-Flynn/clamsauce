@@ -21,15 +21,16 @@
         <div id="content-wrap">
             <header id="header" class="jumbotron jumbotron-fluid d-flex fixed-top align-items-center">
                 <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-                    <div class="logo me-auto col">
+                    <div class="logo me-auto col-md-8">
                         <h1 class="text-nowrap"><a href="index.html"><span>Italian</span> Restaurant</a></h1>
-                    </div>
-                    <div class="copyright">
-                        &copy;2022 <strong><span>Italian Restaurant</span></strong>
+                        <div class="copyright text-nowrap">
+                            &copy;2022 <strong><span>Italian Restaurant</span></strong>
+                        </div>
                     </div>
                 </div>
-                <a class="book-a-table-btn" role="button" data-toggle="modal" data-target="#bookATableModal">BOOK A
-                    TABLE</a>
+                <div class="col">
+                    <a class="book-a-table-btn" role="button" data-toggle="modal" data-target="#bookATableModal">BOOK A TABLE</a>
+                </div>
             </header>
             <nav id="navbar" class="navbar navbar-expand-sm navbar-dark sticky-top">
                 <div class="container">
@@ -225,7 +226,7 @@
                             <div class="carousel-item" style="background-image: url(img/pizza.jpg);">
                                 <div class="carousel-container">
                                     <div class="carousel-content">
-                                        <h2 class="animate__animated animate__fadeInDown">Culinary Excellence</h2>
+                                        <h2 class="animate__animated animate__fadeInDown"><span>Culinary</span> Excellence</h2>
                                         <p class="animate__animated animate__fadeInUp">To ensure the highest quality
                                             dining
                                             experience, our chef updates the menu daily.</p>
@@ -242,7 +243,7 @@
                             <div class="carousel-item" style="background-image: url(img/spaghetti.jpg);">
                                 <div class="carousel-container">
                                     <div class="carousel-content">
-                                        <h2 class="animate__animated animate__fadeInDown">Food for the Soul</h2>
+                                        <h2 class="animate__animated animate__fadeInDown"><span>Food</span> for the Soul</h2>
                                         <p class="animate__animated animate__fadeInUp">Come and join us for a night you
                                             won't
                                             soon forget!</p>
@@ -270,211 +271,216 @@
                 </div>
             </section>
             <div class="container">
-                <div id="menu" class="menu">
-                    <h2 class="heading-block heading-block-center topmargin-sm col-sm-3 menu-group-heading">Appetizers
-                    </h2>
-                    <div class="menu-group">
-                        <div class="menu-item">
-                            <img class="menu-item-image" src="img/bruschetta.jpg" alt="Bruschetta">
-                            <div class="menu-item-text">
-                                <h3 class="menu-item-heading">
-                                    <span class="menu-item-name">Bruschetta</span>
-                                    <span class="menu-item-price">$9.95</span>
-                                </h3>
-                                <p class="menu-item-description">Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit.
-                                    Sunt
-                                    magnam ex, quam hic,
-                                    consectetur repellat eligendi in nobis aliquid at quis, expedita itaque! Laudantium
-                                    nemo
-                                    rem
-                                    dicta obcaecati magni voluptatibus?</p>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="menu-item-image" src="img/calamari.jpg" alt="Calamari">
-                            <div class="menu-item-text">
-                                <h3 class="menu-item-heading">
-                                    <span class="menu-item-name">Calamari</span>
-                                    <span class="menu-item-price">$11.95</span>
-                                </h3>
-                                <p class="menu-item-description">Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit.
-                                    Iste
-                                    vero voluptate est rerum. Velit
-                                    enim placeat mollitia, at aliquam et sequi vero eligendi quos repellendus, similique
-                                    dolore.
-                                    Dolorum, minima voluptatem.</p>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="menu-item-image" src="img/mozzarella_sticks.jpg" alt="Mozzarella Sticks">
-                            <div class="menu-item-text">
-                                <h3 class="menu-item-heading">
-                                    <span class="menu-item-name">Mozzarella Sticks</span>
-                                    <span class="menu-item-price">$9.95</span>
-                                </h3>
-                                <p class="menu-item-description">Lorem ipsum, dolor sit amet consectetur adipisicing
-                                    elit.
-                                    Quod
-                                    natus quaerat, iusto dolores
-                                    maxime ut veritatis libero perferendis ducimus. Quos ratione unde veniam sit,
-                                    quisquam
-                                    quia
-                                    ut. Officiis, quis tempora?</p>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="menu-item-image" src="img/caprese.jpg" alt="Caprese">
-                            <div class="menu-item-text">
-                                <h3 class="menu-item-heading">
-                                    <span class="menu-item-name">Caprese Salad</span>
-                                    <span class="menu-item-price">$10.95</span>
-                                </h3>
-                                <p class="menu-item-description">Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit.
-                                    Recusandae accusamus aspernatur
-                                    veritatis possimus voluptatem esse deleniti assumenda fugit ut vel. Natus, accusamus
-                                    possimus maiores soluta repellendus eligendi magni ducimus incidunt.</p>
-                            </div>
-                        </div>
-                        <h2 class="heading-block heading-block-center topmargin-sm col-sm-3 menu-group-heading">Entrees
-                        </h2>
+                <div class="second-border-container">
+                    <div id="menu" class="menu">
+                        <h2 class=" heading-block heading-block-center topmargin-sm col-sm menu-group-heading text-center">Appetizers</h2>
                         <div class="menu-group">
                             <div class="menu-item">
-                                <img class="menu-item-image" src="img/Classic-Lasagna.jpg" alt="Lasagna">
+                                <img class="menu-item-image" src="img/bruschetta.jpg" alt="Bruschetta">
                                 <div class="menu-item-text">
                                     <h3 class="menu-item-heading">
-                                        <span class="menu-item-name">Classic Lasagna</span>
-                                        <span class="menu-item-price">$15.95</span>
-                                    </h3>
-                                    <p class="menu-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                        elit.
-                                        Porro, facere necessitatibus
-                                        nemo eaque harum cum enim libero animi quidem quisquam modi deleniti distinctio
-                                        pariatur
-                                        dolorem quis esse, voluptatum impedit laudantium!</p>
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <img class="menu-item-image" src="img/pizza.jpg" alt="Margherita Pizaa">
-                                <div class="menu-item-text">
-                                    <h3 class="menu-item-heading">
-                                        <span class="menu-item-name">Margherita Pizza</span>
-                                        <span class="menu-item-price">$16.95</span>
-                                    </h3>
-                                    <p class="menu-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                        elit.
-                                        Porro, facere necessitatibus
-                                        nemo eaque harum cum enim libero animi quidem quisquam modi deleniti distinctio
-                                        pariatur
-                                        dolorem quis esse, voluptatum impedit laudantium!</p>
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <img class="menu-item-image" src="img/spaghetti.jpg" alt="Spaghetti and Meatsauce">
-                                <div class="menu-item-text">
-                                    <h3 class="menu-item-heading">
-                                        <span class="menu-item-name">Spaghetti & Meatsauce</span>
-                                        <span class="menu-item-price">$16.95</span>
-                                    </h3>
-                                    <p class="menu-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                        elit.
-                                        Porro, facere necessitatibus
-                                        nemo eaque harum cum enim libero animi quidem quisquam modi deleniti distinctio
-                                        pariatur
-                                        dolorem quis esse, voluptatum impedit laudantium!</p>
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <img class="menu-item-image" src="img/spag_and_meatballs.jpg"
-                                    alt="Spaghetti and Meatballs">
-                                <div class="menu-item-text">
-                                    <h3 class="menu-item-heading">
-                                        <span class="menu-item-name">Spaghetti & Meatballs</span>
-                                        <span class="menu-item-price">$16.95</span>
-                                    </h3>
-                                    <p class="menu-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                        elit.
-                                        Porro, facere necessitatibus
-                                        nemo eaque harum cum enim libero animi quidem quisquam modi deleniti distinctio
-                                        pariatur
-                                        dolorem quis esse, voluptatum impedit laudantium!</p>
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <img class="menu-item-image" src="img/spag_and_sauce.jpeg" alt="Spaghetti and Sauce">
-                                <div class="menu-item-text">
-                                    <h3 class="menu-item-heading">
-                                        <span class="menu-item-name">Spaghetti & Sauce</span>
-                                        <span class="menu-item-price">$16.95</span>
-                                    </h3>
-                                    <p class="menu-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                        elit.
-                                        Porro, facere necessitatibus
-                                        nemo eaque harum cum enim libero animi quidem quisquam modi deleniti distinctio
-                                        pariatur
-                                        dolorem quis esse, voluptatum impedit laudantium!</p>
-                                </div>
-                            </div>
-                            <div class="menu-item"></div>
-                        </div>
-                        <h2 class="heading-block heading-block-center topmargin-sm col-sm-3 menu-group-heading">Dessert
-                        </h2>
-                        <div class="menu-group">
-                            <div class="menu-item">
-                                <img class="menu-item-image" src="img/cannoli.jpg" alt="Cannoli">
-                                <div class="menu-item-text">
-                                    <h3 class="menu-item-heading">
-                                        <span class="menu-item-name">Cannoli</span>
-                                        <span class="menu-item-price">$7.95</span>
+                                        <span class="menu-item-name">Bruschetta</span>
+                                        <span class="menu-item-price">$9.95</span>
                                     </h3>
                                     <p class="menu-item-description">Lorem ipsum dolor sit amet consectetur adipisicing
                                         elit.
-                                        Iste vero voluptate est rerum.
-                                        Velit enim placeat mollitia, at aliquam et sequi vero eligendi quos repellendus,
-                                        similique dolore. Dolorum, minima voluptatem.</p>
+                                        Sunt
+                                        magnam ex, quam hic,
+                                        consectetur repellat eligendi in nobis aliquid at quis, expedita itaque! Laudantium
+                                        nemo
+                                        rem
+                                        dicta obcaecati magni voluptatibus?</p>
                                 </div>
                             </div>
                             <div class="menu-item">
-                                <img class="menu-item-image" src="img/tiramisu.jpg" alt="tiramisu">
+                                <img class="menu-item-image" src="img/calamari.jpg" alt="Calamari">
                                 <div class="menu-item-text">
                                     <h3 class="menu-item-heading">
-                                        <span class="menu-item-name">Tiramisu</span>
-                                        <span class="menu-item-price">$7.95</span>
+                                        <span class="menu-item-name">Calamari</span>
+                                        <span class="menu-item-price">$11.95</span>
                                     </h3>
                                     <p class="menu-item-description">Lorem ipsum dolor sit amet consectetur adipisicing
                                         elit.
-                                        Iste vero voluptate est rerum.
-                                        Velit enim placeat mollitia, at aliquam et sequi vero eligendi quos repellendus,
-                                        similique dolore. Dolorum, minima voluptatem.</p>
+                                        Iste
+                                        vero voluptate est rerum. Velit
+                                        enim placeat mollitia, at aliquam et sequi vero eligendi quos repellendus, similique
+                                        dolore.
+                                        Dolorum, minima voluptatem.</p>
                                 </div>
                             </div>
                             <div class="menu-item">
-                                <img class="menu-item-image" src="img/stracciatelli.jpg" alt="Mint Stracciatelli">
+                                <img class="menu-item-image" src="img/mozzarella_sticks.jpg" alt="Mozzarella Sticks">
                                 <div class="menu-item-text">
                                     <h3 class="menu-item-heading">
-                                        <span class="menu-item-name">Mint Straciatella Gelato</span>
-                                        <span class="menu-item-price">$8.95</span>
+                                        <span class="menu-item-name">Mozzarella Sticks</span>
+                                        <span class="menu-item-price">$9.95</span>
+                                    </h3>
+                                    <p class="menu-item-description">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Quod
+                                        natus quaerat, iusto dolores
+                                        maxime ut veritatis libero perferendis ducimus. Quos ratione unde veniam sit,
+                                        quisquam
+                                        quia
+                                        ut. Officiis, quis tempora?</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img class="menu-item-image" src="img/caprese.jpg" alt="Caprese">
+                                <div class="menu-item-text">
+                                    <h3 class="menu-item-heading">
+                                        <span class="menu-item-name">Caprese Salad</span>
+                                        <span class="menu-item-price">$10.95</span>
                                     </h3>
                                     <p class="menu-item-description">Lorem ipsum dolor sit amet consectetur adipisicing
                                         elit.
-                                        Iste vero voluptate est rerum.
-                                        Velit enim placeat mollitia, at aliquam et sequi vero eligendi quos repellendus,
-                                        similique dolore. Dolorum, minima voluptatem.</p>
+                                        Recusandae accusamus aspernatur
+                                        veritatis possimus voluptatem esse deleniti assumenda fugit ut vel. Natus, accusamus
+                                        possimus maiores soluta repellendus eligendi magni ducimus incidunt.</p>
                                 </div>
-                                <h4>Not dining in with us tonight?</h4>
-                                <p>Order something online instead!</p>
-                                <a href="orderonline.html" type="btn" class="btn book-a-table-btn">ORDER ONLINE</a>
+                            </div>
+                            <h2 class="heading-block heading-block-center topmargin-sm col-sm menu-group-heading text-center">Entrees
+                            </h2>
+                            <div class="menu-group">
+                                <div class="menu-item">
+                                    <img class="menu-item-image" src="img/Classic-Lasagna.jpg" alt="Lasagna">
+                                    <div class="menu-item-text">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">Classic Lasagna</span>
+                                            <span class="menu-item-price">$15.95</span>
+                                        </h3>
+                                        <p class="menu-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                            elit.
+                                            Porro, facere necessitatibus
+                                            nemo eaque harum cum enim libero animi quidem quisquam modi deleniti distinctio
+                                            pariatur
+                                            dolorem quis esse, voluptatum impedit laudantium!</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <img class="menu-item-image" src="img/pizza.jpg" alt="Margherita Pizaa">
+                                    <div class="menu-item-text">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">Margherita Pizza</span>
+                                            <span class="menu-item-price">$16.95</span>
+                                        </h3>
+                                        <p class="menu-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                            elit.
+                                            Porro, facere necessitatibus
+                                            nemo eaque harum cum enim libero animi quidem quisquam modi deleniti distinctio
+                                            pariatur
+                                            dolorem quis esse, voluptatum impedit laudantium!</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <img class="menu-item-image" src="img/spaghetti.jpg" alt="Spaghetti and Meatsauce">
+                                    <div class="menu-item-text">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">Spaghetti & Meatsauce</span>
+                                            <span class="menu-item-price">$16.95</span>
+                                        </h3>
+                                        <p class="menu-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                            elit.
+                                            Porro, facere necessitatibus
+                                            nemo eaque harum cum enim libero animi quidem quisquam modi deleniti distinctio
+                                            pariatur
+                                            dolorem quis esse, voluptatum impedit laudantium!</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <img class="menu-item-image" src="img/spag_and_meatballs.jpg"
+                                        alt="Spaghetti and Meatballs">
+                                    <div class="menu-item-text">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">Spaghetti & Meatballs</span>
+                                            <span class="menu-item-price">$16.95</span>
+                                        </h3>
+                                        <p class="menu-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                            elit.
+                                            Porro, facere necessitatibus
+                                            nemo eaque harum cum enim libero animi quidem quisquam modi deleniti distinctio
+                                            pariatur
+                                            dolorem quis esse, voluptatum impedit laudantium!</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <img class="menu-item-image" src="img/spag_and_sauce.jpeg" alt="Spaghetti and Sauce">
+                                    <div class="menu-item-text">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">Spaghetti & Sauce</span>
+                                            <span class="menu-item-price">$16.95</span>
+                                        </h3>
+                                        <p class="menu-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                            elit.
+                                            Porro, facere necessitatibus
+                                            nemo eaque harum cum enim libero animi quidem quisquam modi deleniti distinctio
+                                            pariatur
+                                            dolorem quis esse, voluptatum impedit laudantium!</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item"></div>
+                            </div>
+                            <h2 class="heading-block heading-block-center topmargin-sm col-sm menu-group-heading text-center">Dessert
+                            </h2>
+                            <div class="menu-group">
+                                <div class="menu-item">
+                                    <img class="menu-item-image" src="img/cannoli.jpg" alt="Cannoli">
+                                    <div class="menu-item-text">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">Cannoli</span>
+                                            <span class="menu-item-price">$7.95</span>
+                                        </h3>
+                                        <p class="menu-item-description">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit.
+                                            Iste vero voluptate est rerum.
+                                            Velit enim placeat mollitia, at aliquam et sequi vero eligendi quos repellendus,
+                                            similique dolore. Dolorum, minima voluptatem.</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <img class="menu-item-image" src="img/tiramisu.jpg" alt="tiramisu">
+                                    <div class="menu-item-text">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">Tiramisu</span>
+                                            <span class="menu-item-price">$7.95</span>
+                                        </h3>
+                                        <p class="menu-item-description">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit.
+                                            Iste vero voluptate est rerum.
+                                            Velit enim placeat mollitia, at aliquam et sequi vero eligendi quos repellendus,
+                                            similique dolore. Dolorum, minima voluptatem.</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <img class="menu-item-image" src="img/stracciatelli.jpg" alt="Mint Stracciatelli">
+                                    <div class="menu-item-text">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">Mint Straciatella Gelato</span>
+                                            <span class="menu-item-price">$8.95</span>
+                                        </h3>
+                                        <p class="menu-item-description">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit.
+                                            Iste vero voluptate est rerum.
+                                            Velit enim placeat mollitia, at aliquam et sequi vero eligendi quos repellendus,
+                                            similique dolore. Dolorum, minima voluptatem.</p>
+                                    </div>
+                                    <div class="bottom-border">
+                                        <h4 class="text-center">Not dining in with us tonight?</h4>
+                                        <p class="text-center">Order something online instead!</p>
+                                        <div class="text-center">
+                                            <a href="orderonline.html" type="btn" class="btn book-a-table-btn">ORDER ONLINE</a>
+                                        <div>
+                                    </div>        
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>    
         </div>
         <footer id="footer">
             <div class="container-fluid-footer">
-                <h3>Italian Restaurant</h3>
+            <h3><span>Italian</span> Restaurant</h3>
                 <p>IL LUPO PERDE IL PELO MA NON IL VIZIO</p>
                 <div class="social-links">
                     <a href="twitter.com" type="btn" class="btn btn-sm btn-twitter"><i class="fa fa-twitter"></i></a>

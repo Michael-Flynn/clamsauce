@@ -9,9 +9,10 @@ body {
     min-height: 100vh;
 }
 #content-wrap {
-    padding-bottom: 2.5rem;
+    padding-bottom: 5rem;
 }
 .jumbotron {
+    display:flex;
     padding: 20px;
     background-image: linear-gradient(to left, #fcfbf9, #fbf1de, #f9e7c4, #f8ddaa, #f6d290, #f6cb7e, #f5c36c, #f5bb59, #f7b449, #f8ad37, #faa623, #fc9e00);
     margin: 0;
@@ -22,7 +23,7 @@ body {
 }
 .navbar a, .navbar a:focus {
     display: flex;
-    justify-content: end;
+    justify-content: left;
     font-size: 15px;
     font-weight: 500;
 }
@@ -33,19 +34,26 @@ body {
     background-image: linear-gradient(to left, #fcfbf9, #fbf1de, #f9e7c4, #f8ddaa, #f6d290, #f6cb7e, #f5c36c, #f5bb59, #f7b449, #f8ad37, #faa623, #fc9e00); 
 }
 .about {
-padding: 10px 10px 10px 10px; 
+    padding: 10px 10px 10px 10px;
+    border: 2px dotted whitesmoke;
+}
+.about h3 {
+    border-bottom: 4px solid orangered;
+}
+.second-border-container {
+border: 2px solid whitesmoke;
 }
 #menu {
     padding: 1.5em;
     max-width: 1200px;
     margin: 0 auto;
     font-size: 14px;
-    border: 2px solid whitesmoke;
+    border: 2px dotted whitesmoke;
 }
 .menu-group-heading {
     margin: 0;
     padding-bottom: .25em;
-    border-bottom: 4px solid orangered;
+    border-bottom: 3px solid orangered;
 }
 .menu-group {
     display: grid;
@@ -53,12 +61,16 @@ padding: 10px 10px 10px 10px;
     gap: 1.5em;
     padding: 1.5em 0;
 }
+.menu-item {
+        border: 2px dotted whitesmoke;
+}
 .menu-item-image {
     width: 80px;
     height: 80px;
     flex-shrink: 0;
+    float: left;
     object-fit: cover;
-    margin-right:1.5em;
+    padding-right: 1em;
     padding-bottom: .5em;
 }
 .menu-item-text {
