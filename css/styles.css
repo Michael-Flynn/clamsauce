@@ -40,6 +40,13 @@ body {
 .about h3 {
     border-bottom: 4px solid orangered;
 }
+.about-content {
+    border: 2px dotted whitesmoke;
+    padding: 10px 10px 10px 10px;
+}
+.about-content h3 {
+    border-bottom: 4px solid orangered;
+}
 .second-border-container {
 border: 2px solid whitesmoke;
 }
@@ -101,9 +108,6 @@ h1, h2 , h3 {
 }
 h2 span {
     color: whitesmoke;
-}
-h1 span {
-    color:#69d22c;
 }
 h1, h2 {
     color: whitesmoke;
