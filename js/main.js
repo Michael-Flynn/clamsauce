@@ -46,3 +46,4 @@
       homeCarouselIndicators.innerHTML += "<li data-bs-target='#homeCarousel' data-bs-slide-to='" + index + "' class='active'></li>":
         homeCarouselIndicators.innerHTML += "<li data-bs-target='#homeCarousel' data-bs-slide-to='" + index + "'></li>"
     });
+  })
