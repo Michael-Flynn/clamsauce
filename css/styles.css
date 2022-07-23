@@ -248,11 +248,13 @@ h1, h2 {
 .contact-row {
     padding: 30px 0;
     border: 2px dotted whitesmoke;
-    min-height: 200px;
     }
-    .contact-row a, .contact-row a:hover {
+.contact-row a, .contact-row a:hover {
         color: whitesmoke;
-    }
+}
+.contact-row h4 {
+    border-bottom: 4px solid orangered;
+}
 .book-a-table-btn {
     background: #9c5f04;
     color: #fff;
@@ -319,6 +321,7 @@ input, select, textarea {
     background-image: linear-gradient(to left, #fcfbf9, #fbf1de, #f9e7c4, #f8ddaa, #f6d290, #f6cb7e, #f5c36c, #f5bb59, #f7b449, #f8ad37, #faa623, #fc9e00);
     width: 100%;
     height: auto;
+    
 }
 #footer h3 {
     font-family:'Satisfy';
