@@ -84,8 +84,8 @@ margin: 1em 1em 1em 1em;
     flex-shrink: 0;
     float: left;
     object-fit: cover;
-    padding-right: 1em;
-    padding-bottom: .5em;
+    padding-right: .25em;
+    padding-bottom: .25em;
 }
 .menu-item-text {
     flex-grow: 1;
