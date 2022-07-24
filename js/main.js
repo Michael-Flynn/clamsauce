@@ -3,8 +3,7 @@
 
   $(function () {
             $('[data-toggle="tooltip"]').tooltip()
-        })
-        
+        })     
   const select = (el, all = false) => {
     el = el.trim()
     if (all) {

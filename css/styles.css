@@ -257,8 +257,13 @@ h1, h2 {
     padding: 1em 1em 1em 1em;
     margin: 1em 1em 1em 1em;
     }
-.contact-row a, .contact-row a:hover {
+.contact-row a  {
+        text-decoration: none;
         color: whitesmoke;
+}
+.contact-row a:hover {
+    text-decoration: none;
+    color:#69d22c;
 }
 .contact-row h4 {
     border-bottom: 4px solid orangered;
