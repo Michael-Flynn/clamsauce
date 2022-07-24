@@ -7,16 +7,25 @@
     "scss": "node-sass -o css/ css/",
     "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* -o dist/img",
+    "clean": "rimraf dist",
+    "usemin": "usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin orderonline.html -d dist --htmlmin -o dist/orderonline.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin our_menu.html -d dist --htmlmin -o dist/our_menu.html",
     "watch:scss": "onchange 'css/*.scss' -- npm run scss",
     "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
     "lite-server": "^2.6.1",
     "node-sass": "^6.0.1",
     "onchange": "^7.0.0",
-    "parallelshell": "3.0.1"
+    "parallelshell": "3.0.1",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "animate": "^1.0.0",
