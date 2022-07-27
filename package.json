@@ -12,8 +12,8 @@
     "imagemin": "imagemin img/* -o dist/img",
     "clean": "rimraf dist",
     "usemin": "usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin orderonline.html -d dist --htmlmin -o dist/orderonline.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin our_menu.html -d dist --htmlmin -o dist/our_menu.html",
-    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
-    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
   },
   "author": "",
   "license": "ISC",
